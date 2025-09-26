@@ -1,0 +1,28 @@
+{
+  "name": "my-app",
+  "version": "0.0.1",
+  "description": "Minimal Vike + Solid + Hono benchmark app matching Next.js app router",
+  "type": "module",
+  "scripts": {
+    "dev": "bunx --bun vike dev",
+    "build": "bunx --bun vike build",
+    "preview": "NODE_ENV=production bun run dist/server/index.js",
+    "preview-static": "vite preview",
+    "start": "NODE_ENV=production bun run dist/server/index.js",
+    "dev-node": "vike dev",
+    "build-node": "vike build",
+    "start-node": "NODE_ENV=production node dist/server/index.js"
+  },
+  "dependencies": {
+    "hono": "^4.9.4",
+    "solid-js": "1.9.9",
+    "vike": "0.4.237",
+    "vike-server": "^1.0.23",
+    "vike-solid": "^0.7.12"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.20",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.3"
+  }
+}
